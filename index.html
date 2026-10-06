@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reino do Simba - Pet Shop e Veterinária">
+  <title>Reino do Simba | Pet Shop e Veterinária</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">🐾 Cuidando do seu melhor amigo com carinho, qualidade e confiança.</div>
+
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Reino do Simba início">
+      <div class="brand-mark">🐾</div>
+      <div><strong>Reino do <span>Simba</span></strong><small>PET SHOP E VETERINÁRIA</small></div>
+    </a>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="whatsapp-head" href="#" data-whatsapp>◉ Fale Conosco<br><b>pelo WhatsApp</b></a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Seu pet bem cuidado, sempre!</p>
+        <h1>Tudo o que seu pet <br>precisa <em>em um só lugar!</em></h1>
+        <p>Rações, acessórios, produtos de higiene, banho e tosa, atendimento veterinário e muito mais.</p>
+        <div class="hero-actions">
+          <a href="#produtos" class="btn btn-gold">🐾 Conheça nossos produtos</a>
+          <a href="#servicos" class="btn btn-outline">Ver serviços</a>
+        </div>
+      </div>
+      <div class="hero-pets">
+        <div class="blob"></div>
+        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=85" alt="Cachorro feliz">
+        <img class="cat" src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=600&q=85" alt="Gato">
+        <div class="hero-note">Aqui seu pet<br><b>é da família!</b> ♥</div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <a href="#produtos"><span>🐾</span><b>Rações</b></a>
+      <a href="#produtos"><span>🦴</span><b>Acessórios</b></a>
+      <a href="#produtos"><span>🧴</span><b>Higiene e Beleza</b></a>
+      <a href="#produtos"><span>✚</span><b>Medicamentos</b></a>
+      <a href="#produtos"><span>⚽</span><b>Brinquedos</b></a>
+      <a href="#servicos"><span>♥</span><b>Serviços</b></a>
+    </section>
+
+    <section class="section" id="produtos">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">🐾 Qualidade para seu pet</span>
+          <h2>Produtos em Destaque</h2>
+          <p>Alguns dos produtos que podem fazer parte da loja online.</p>
+        </div>
+        <button class="btn btn-dark" onclick="showAllProducts()">Ver todos os produtos →</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="services" id="servicos">
+      <div class="section-head service-head">
+        <div>
+          <span class="section-kicker light">🐾 Cuidado de verdade</span>
+          <h2>Nossos Serviços</h2>
+          <p>Cuidamos da saúde e do bem-estar do seu pet!</p>
+        </div>
+        <button class="btn btn-gold" onclick="openBooking()">📅 Agendar Serviço</button>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=700&q=80"><div><span>🩺</span><h3>Consulta Veterinária</h3><p>Atendimento com profissionais qualificados.</p></div></article>
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=700&q=80"><div><span>✂️</span><h3>Banho e Tosa</h3><p>Deixe seu pet limpo, cheiroso e bem cuidado.</p></div></article>
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=700&q=80"><div><span>💉</span><h3>Vacinação</h3><p>Proteção para uma vida mais longa.</p></div></article>
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=700&q=80"><div><span>🧴</span><h3>Higiene e Cuidados</h3><p>Produtos e cuidados para o dia a dia.</p></div></article>
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1591946614720-90a587da4a36?auto=format&fit=crop&w=700&q=80"><div><span>🏥</span><h3>Internação</h3><p>Cuidados especiais quando seu pet mais precisa.</p></div></article>
+      </div>
+    </section>
+
+    <section class="trust" id="sobre">
+      <div><span>🐾</span><div><b>Produtos de qualidade</b><small>As melhores marcas para seu pet.</small></div></div>
+      <div><span>♡</span><div><b>Equipe especializada</b><small>Atendimento com carinho e experiência.</small></div></div>
+      <div><span>♥</span><div><b>Ambiente seguro</b><small>Seu pet em boas mãos.</small></div></div>
+      <div><span>◷</span><div><b>Atendimento rápido</b><small>Facilidade no agendamento e WhatsApp.</small></div></div>
+    </section>
+
+    <section class="contact-card" id="contato">
+      <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=900&q=85" alt="Cachorro e gato">
+      <div>
+        <span class="section-kicker">Atendimento rápido</span>
+        <h2>Precisa de um serviço ou tem dúvidas?</h2>
+        <p>Clique no botão e fale com a equipe pelo WhatsApp.</p>
+        <a href="#" class="btn btn-whatsapp" data-whatsapp>◉ Chamar no WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="brand footer-brand"><div class="brand-mark">🐾</div><div><strong>Reino do <span>Simba</span></strong><small>PET SHOP E VETERINÁRIA</small></div></div>
+      <div><b>Localização</b><p>Rua Agostinho Lindoso<br>Timbiras - MA, 65420-000</p></div>
+      <div><b>Horário</b><p>Segunda a Sábado<br>08:00 às 18:00</p></div>
+      <div><b>Siga nossas redes</b><p>Instagram<br><strong>@reinodosimba</strong></p></div>
+    </div>
+    <div class="footer-bottom">Reino do Simba - Pet Shop e Veterinária © 2026. Todos os direitos reservados.</div>
+  </footer>
+
+  <div class="cart-fab" id="cartFab" onclick="openCart()">🛒 <span id="cartCount">0</span></div>
+
+  <div class="modal" id="cartModal">
+    <div class="modal-box">
+      <button class="close" onclick="closeModal('cartModal')">×</button>
+      <h2>Seu carrinho</h2>
+      <div id="cartItems"></div>
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+      <button class="btn btn-whatsapp full" onclick="checkout()">Finalizar pelo WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="modal" id="bookingModal">
+    <div class="modal-box">
+      <button class="close" onclick="closeModal('bookingModal')">×</button>
+      <span class="section-kicker">Agendamento</span>
+      <h2>Agende um serviço</h2>
+      <form id="bookingForm">
+        <label>Seu nome<input id="clientName" required placeholder="Digite seu nome"></label>
+        <label>Serviço<select id="serviceName" required><option value="">Selecione</option><option>Consulta Veterinária</option><option>Banho e Tosa</option><option>Vacinação</option><option>Higiene e Cuidados</option><option>Internação</option></select></label>
+        <label>Data<input id="serviceDate" type="date" required></label>
+        <label>Horário<input id="serviceTime" type="time" required></label>
+        <label>Nome do pet<input id="petName" required placeholder="Ex.: Simba"></label>
+        <button class="btn btn-gold full" type="submit">Confirmar e chamar no WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
